@@ -14,6 +14,7 @@
 		910C2A3420CBAFCC00E5A5BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910C2A3220CBAFCC00E5A5BD /* LaunchScreen.storyboard */; };
 		910C2A3F20CBAFCC00E5A5BD /* MapAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C2A3E20CBAFCC00E5A5BD /* MapAppTests.swift */; };
 		910C2A4A20CBAFCC00E5A5BD /* MapAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C2A4920CBAFCC00E5A5BD /* MapAppUITests.swift */; };
+		910C2A5820CBD33200E5A5BD /* PlaceSuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C2A5720CBD33200E5A5BD /* PlaceSuggestionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		910C2A4520CBAFCC00E5A5BD /* MapAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		910C2A4920CBAFCC00E5A5BD /* MapAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppUITests.swift; sourceTree = "<group>"; };
 		910C2A4B20CBAFCC00E5A5BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		910C2A5720CBD33200E5A5BD /* PlaceSuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSuggestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				910C2A3020CBAFCC00E5A5BD /* Assets.xcassets */,
 				910C2A3220CBAFCC00E5A5BD /* LaunchScreen.storyboard */,
 				910C2A3520CBAFCC00E5A5BD /* Info.plist */,
+				910C2A5720CBD33200E5A5BD /* PlaceSuggestionViewController.swift */,
 			);
 			path = MapApp;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				910C2A5820CBD33200E5A5BD /* PlaceSuggestionViewController.swift in Sources */,
 				910C2A2C20CBAFCA00E5A5BD /* ViewController.swift in Sources */,
 				910C2A2A20CBAFCA00E5A5BD /* AppDelegate.swift in Sources */,
 			);
@@ -432,6 +436,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MapApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -439,7 +444,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tathagat.thapliyal.MapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,6 +454,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MapApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tathagat.thapliyal.MapApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
