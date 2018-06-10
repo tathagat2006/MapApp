@@ -9,7 +9,10 @@
 import UIKit
 
 class PlaceSuggestionViewController: UIViewController {
-
+    @IBOutlet weak var SearchTF: UITextField!
+    @IBOutlet weak var ActivityLoader: UIActivityIndicatorView!
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

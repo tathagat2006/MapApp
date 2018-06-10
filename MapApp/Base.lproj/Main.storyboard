@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M9R-gR-Awj">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -23,7 +23,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pw8-94-gdU">
                                 <rect key="frame" x="0.0" y="64" width="414" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER DROP ADDRESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymb-M1-PL9">
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER DROP ADDRESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ymb-M1-PL9">
                                         <rect key="frame" x="43" y="56" width="328" height="30"/>
                                         <color key="backgroundColor" red="0.1380318177" green="0.47216737139999998" blue="0.69846988340000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -34,7 +34,7 @@
                                         <color key="highlightedColor" red="1" green="0.32556116977965532" blue="0.72967596923806255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <color key="shadowColor" red="0.064317925070000004" green="0.21678917889999999" blue="0.31944219559999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER PICK ADDRESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTT-j4-U45">
+                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER PICK ADDRESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTT-j4-U45">
                                         <rect key="frame" x="43" y="18" width="328" height="30"/>
                                         <color key="backgroundColor" red="0.13803181769216147" green="0.47216737136338488" blue="0.6984698834072538" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -185,6 +185,11 @@
                         <viewLayoutGuide key="safeArea" id="f9N-vV-cQ0"/>
                     </view>
                     <navigationItem key="navigationItem" title="Place Suggestions" id="rDB-3T-hg6"/>
+                    <connections>
+                        <outlet property="ActivityLoader" destination="AN9-YA-Ynq" id="jQe-4g-Owg"/>
+                        <outlet property="SearchTF" destination="7l9-YZ-IBh" id="b43-Gc-UPD"/>
+                        <outlet property="tableView" destination="eft-iO-K2f" id="1lX-B0-H4u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsy-jq-OEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -18,6 +18,7 @@
 		910C2A3F20CBAFCC00E5A5BD /* MapAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C2A3E20CBAFCC00E5A5BD /* MapAppTests.swift */; };
 		910C2A4A20CBAFCC00E5A5BD /* MapAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C2A4920CBAFCC00E5A5BD /* MapAppUITests.swift */; };
 		910C2A5820CBD33200E5A5BD /* PlaceSuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910C2A5720CBD33200E5A5BD /* PlaceSuggestionViewController.swift */; };
+		91F2664020CD0957001289CD /* SuggestionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F2663F20CD0957001289CD /* SuggestionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		910C2A4920CBAFCC00E5A5BD /* MapAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAppUITests.swift; sourceTree = "<group>"; };
 		910C2A4B20CBAFCC00E5A5BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		910C2A5720CBD33200E5A5BD /* PlaceSuggestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSuggestionViewController.swift; sourceTree = "<group>"; };
+		91F2663F20CD0957001289CD /* SuggestionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestionViewCell.swift; sourceTree = "<group>"; };
 		AC26601D25A7323AE314F74B /* Pods-MapApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapApp/Pods-MapApp.release.xcconfig"; sourceTree = "<group>"; };
 		BDF5A15DF1AEE08A44E444F7 /* Pods-MapAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapAppTests/Pods-MapAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		C8CF53CECC483CBA8BFCACB1 /* Pods-MapAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapAppUITests/Pods-MapAppUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				910C2A3220CBAFCC00E5A5BD /* LaunchScreen.storyboard */,
 				910C2A3520CBAFCC00E5A5BD /* Info.plist */,
 				910C2A5720CBD33200E5A5BD /* PlaceSuggestionViewController.swift */,
+				91F2663F20CD0957001289CD /* SuggestionViewCell.swift */,
 			);
 			path = MapApp;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 			files = (
 				910C2A5820CBD33200E5A5BD /* PlaceSuggestionViewController.swift in Sources */,
 				910C2A2C20CBAFCA00E5A5BD /* ViewController.swift in Sources */,
+				91F2664020CD0957001289CD /* SuggestionViewCell.swift in Sources */,
 				910C2A2A20CBAFCA00E5A5BD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
