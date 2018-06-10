@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pkX-Ii-9a8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -58,7 +58,7 @@
                                     <constraint firstAttribute="height" constant="100" id="mCT-YB-SFj"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDs-AP-8Pg">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDs-AP-8Pg" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="164" width="414" height="572"/>
                                 <color key="backgroundColor" red="1" green="0.94067260448389056" blue="0.51077276904892899" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
@@ -184,7 +184,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsy-jq-OEu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1955" y="32"/>
+            <point key="canvasLocation" x="662" y="713"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5sD-Ld-Vc0">
@@ -226,7 +226,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUl-Cm-qdl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1313" y="33"/>
+            <point key="canvasLocation" x="-10" y="713"/>
         </scene>
     </scenes>
     <resources>
