@@ -77,6 +77,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home Screen" id="3rw-3c-R2Y"/>
+                    <connections>
+                        <outlet property="DropLabel" destination="Ymb-M1-PL9" id="uEG-U7-o3z"/>
+                        <outlet property="PickLabel" destination="QTT-j4-U45" id="FVv-2m-8aI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
