@@ -105,6 +105,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="TFEdittingChange:" destination="pMy-kF-mkK" eventType="editingChanged" id="dbC-4q-gL7"/>
+                                        </connections>
                                     </textField>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="AN9-YA-Ynq">
                                         <rect key="frame" x="377" y="27" width="20" height="22"/>

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import GooglePlaces
 
 class PlaceSuggestionViewController: UIViewController {
     @IBOutlet weak var SearchTF: UITextField!
@@ -22,6 +23,36 @@ class PlaceSuggestionViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func TFEdittingChange(_ sender: UITextField) {
+        if(sender.text==""){
+            return;
+        }else{
+            PlaceAutoComplete(text: "\((sender.text!))")
+        }
+    }
+    
+    func PlaceAutoComplete(text:String){
+        let PlacesClient = GMSPlacesClient.shared()
+        let filter = GMSAutocompleteFilter()
+        filter.type = .address
+        filter.country = "IND"
+        PlacesClient.autocompleteQuery(text, bounds: nil, filter: filter, callback: {(results , error) -> Void in
+            if error != nil{
+                let alert = UIAlertController.init(title: "Error", message: "Something went wrong", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction.init(title: "OK", style: .cancel, handler: nil))
+                print("Autocomplete error \(error)")
+                return
+            }
+            if results != nil{
+                for result in results!{
+                    print("Result \(result.attributedFullText) with PlaceID \(result.placeID)")
+                }
+            }
+            
+        })
+        
     }
     
 
