@@ -42,6 +42,7 @@ class PlaceSuggestionViewController: UIViewController {
             if error != nil{
                 let alert = UIAlertController.init(title: "Error", message: "Something went wrong", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction.init(title: "OK", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
                 print("Autocomplete error \(error)")
                 return
             }
