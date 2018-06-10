@@ -9,7 +9,10 @@
 import UIKit
 
 class SuggestionViewCell: UITableViewCell {
-
+    @IBOutlet weak var PrimaryLabel: UILabel!
+    @IBOutlet weak var SecondaryLabel: UILabel!
+    @IBOutlet weak var ImageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

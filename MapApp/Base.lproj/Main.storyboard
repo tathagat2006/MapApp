@@ -133,7 +133,7 @@
                                     <constraint firstAttribute="width" secondItem="eft-iO-K2f" secondAttribute="height" multiplier="240:277" id="iuA-eJ-pf7"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="41V-W2-iFb">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell_ID" id="41V-W2-iFb" customClass="SuggestionViewCell" customModule="MapApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="336" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="41V-W2-iFb" id="xkX-aE-VKI">
@@ -142,7 +142,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QeC-y5-KA8">
                                                     <rect key="frame" x="39" y="0.0" width="282" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -172,6 +172,11 @@
                                                 <constraint firstAttribute="trailing" secondItem="MiV-z8-RB4" secondAttribute="trailing" constant="20" id="may-aI-xfw"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ImageView" destination="qxk-7Q-WlJ" id="H1M-Om-6Bi"/>
+                                            <outlet property="PrimaryLabel" destination="QeC-y5-KA8" id="HSB-ef-Tdb"/>
+                                            <outlet property="SecondaryLabel" destination="MiV-z8-RB4" id="foG-en-H7p"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

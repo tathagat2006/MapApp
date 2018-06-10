@@ -9,14 +9,31 @@
 import UIKit
 import GooglePlaces
 
-class PlaceSuggestionViewController: UIViewController {
+class PlaceSuggestionViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return SuggestionArr.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell_ID")as! SuggestionViewCell
+        cell.PrimaryLabel.text = SuggestionArr[indexPath.row].attributedPrimaryText.string
+        cell.SecondaryLabel.text = SuggestionArr[indexPath.row].attributedSecondaryText?.string
+        cell.ImageView.image = UIImage.init(named: "baseline_location_on_black_48pt_1x")
+        return cell
+        
+    }
+    
     @IBOutlet weak var SearchTF: UITextField!
     @IBOutlet weak var ActivityLoader: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     
+    //GMSAutopred ke objects pkdne keliye array..
+    var SuggestionArr = [GMSAutocompletePrediction].init()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.delegate = self
+        tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -47,9 +64,12 @@ class PlaceSuggestionViewController: UIViewController {
                 return
             }
             if results != nil{
+                self.SuggestionArr = results!
                 for result in results!{
                     print("Result \(result.attributedFullText) with PlaceID \(result.placeID)")
+                    
                 }
+                self.tableView.reloadData()
             }
             
         })
