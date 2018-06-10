@@ -9,7 +9,7 @@
 import UIKit
 import GooglePlaces
 
-class PlaceSuggestionViewController: UIViewController , UITableViewDelegate, UITableViewDataSource {
+class PlaceSuggestionViewController: UIViewController , UITableViewDelegate, UITableViewDataSource,UITextFieldDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return SuggestionArr.count
     }
@@ -32,9 +32,17 @@ class PlaceSuggestionViewController: UIViewController , UITableViewDelegate, UIT
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SearchTF.delegate = self
         tableView.delegate = self
         tableView.dataSource = self
         // Do any additional setup after loading the view.
+    }
+    
+  
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
     }
 
     override func didReceiveMemoryWarning() {
